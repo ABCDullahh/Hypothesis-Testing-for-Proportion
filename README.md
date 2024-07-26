@@ -1,87 +1,55 @@
-# Hypothesis-Testing-for-Proportion
-Hypothesis Testing for Proportion
-Z TEST
+# Z TEST
+
 This Jupyter notebook provides an in-depth analysis of Z tests and Chi-squared tests, along with their applications in various statistical scenarios.
 
-Table of Contents
-Analisis Data
-Cek Proporsi dari Masing-Masing Kolom pada Populasi
-Sampling
-Z-Test Single Population Proportion
-Proporsi customer Male = 63%
-Proporsi customer tidak perokok = 59%
-Chi-Squared
-Hubungan antara Sex dan Tip_given
-Hubungan antara time dan weekday-weekend
-Hubungan antara gender dan smoker
-Analisis Data
-This section covers the initial analysis of the dataset.
+## Table of Contents
 
-Cek Proporsi dari Masing-Masing Kolom pada Populasi
-This section checks the proportion of each column in the population.
+1. Analisis Data
+2. Cek Proporsi dari Masing-Masing Kolom pada Populasi
+3. Sampling
+4. Z-Test Single Population Proportion
+   - Proporsi customer Male = 63%
+   - Proporsi customer tidak perokok = 59%
+5. Chi-Squared
+   - Hubungan antara Sex dan Tip_given
+   - Hubungan antara time dan weekday-weekend
+   - Hubungan antara gender dan smoker
 
-Sampling
-This section discusses the sampling method used in the analysis.
+   ### Z-Test Single Population Proportion
 
-Z-Test Single Population Proportion
-Proporsi Customer Male = 63%
-Asumsi
-Menguji apakah proporsi customer Male = 63%?
+1. **Proporsi Customer Male = 63%**
+   - **Hipotesis**:
+     - H0: p = 63%
+     - Ha: p > 63%
+   - **Signifikansi**: α = 0.05
+   - **Kesimpulan**: Berdasarkan p-value dibandingkan dengan α
 
-Hipotesis
-$H_{0} : p = 63$%
-$H_{a} : p > 63$%
-Signifikansi / Tingkat Resiko ($\alpha$)
-$\alpha = 0.05$
-Pengambilan Kesimpulan
-p-value $\leq \alpha$ : Reject $H_{0}$
-p-value $> \alpha$ : Failed to Reject $H_{0}$ / Accept $H_{0}$
-Proporsi Customer Tidak Perokok = 59%
-Asumsi
-Customer tidak perokok = 59%
+2. **Proporsi Customer Tidak Perokok = 59%**
+   - **Hipotesis**:
+     - H0: p = 59%
+     - Ha: p ≠ 59%
+   - **Signifikansi**: α = 0.05
+   - **Kesimpulan**: Berdasarkan p-value dibandingkan dengan α
 
-Hipotesis
-$H_{0} : p = 59%$
-$H_{a} : p \neq 59%$
-Signifikansi / Tingkat Resiko ($\alpha$)
-$\alpha = 0.05$
-Pengambilan Kesimpulan
-p-value $\leq \alpha$ : Reject $H_{0}$
-p-value $> \alpha$ : Failed to Reject $H_{0}$ / Accept $H_{0}$
-Chi-Squared
-Hubungan antara Sex dan Tip_given
-Asumsi
-Apakah ada hubungan antara Sex dan Tip_given?
+## Chi-Squared Test
 
-Hipotesis
-$H_{0} :$ Sex dan Tip_given independent
-$H_{a} :$ Sex dan Tip_given dependent
-Signifikansi / Tingkat Resiko ($\alpha$)
-$\alpha = 0.05$
-Pengambilan Kesimpulan
-p-value $\leq \alpha$ : Reject $H_{0}$
-p-value $> \alpha$ : Failed to Reject $H_{0}$ / Accept $H_{0}$
-Hubungan antara Time dan Weekday-Weekend
-Asumsi
-Apakah ada hubungan antara time dan weekday-weekend?
+1. **Hubungan antara Sex dan Tip_given**
+   - **Hipotesis**:
+     - H0: `Sex` dan `Tip_given` independent
+     - Ha: `Sex` dan `Tip_given` dependent
+   - **Signifikansi**: α = 0.05
+   - **Kesimpulan**: Berdasarkan p-value dibandingkan dengan α
 
-Hipotesis
-$H_{0} :$ time dan weekday-weekend independent
-$H_{a} :$ time dan weekday-weekend dependent
-Signifikansi / Tingkat Resiko ($\alpha$)
-$\alpha = 0.05$
-Pengambilan Kesimpulan
-p-value $\leq \alpha$ : Reject $H_{0}$
-p-value $> \alpha$ : Failed to Reject $H_{0}$ / Accept $H_{0}$
-Hubungan antara Gender dan Smoker
-Asumsi
-Apakah ada hubungan antara gender dan smoker?
+2. **Hubungan antara Time dan Weekday-Weekend**
+   - **Hipotesis**:
+     - H0: `time` dan `weekday-weekend` independent
+     - Ha: `time` dan `weekday-weekend` dependent
+   - **Signifikansi**: α = 0.05
+   - **Kesimpulan**: Berdasarkan p-value dibandingkan dengan α
 
-Hipotesis
-$H_{0} :$ gender dan smoker independent
-$H_{a} :$ gender dan smoker dependent
-Signifikansi / Tingkat Resiko ($\alpha$)
-$\alpha = 0.05$
-Pengambilan Kesimpulan
-p-value $\leq \alpha$ : Reject $H_{0}$
-p-value $> \alpha$ : Failed to Reject $H_{0}$ / Accept $H_{0}$
+3. **Hubungan antara Gender dan Smoker**
+   - **Hipotesis**:
+     - H0: `gender` dan `smoker` independent
+     - Ha: `gender` dan `smoker` dependent
+   - **Signifikansi**: α = 0.05
+   - **Kesimpulan**: Berdasarkan p-value dibandingkan dengan α
